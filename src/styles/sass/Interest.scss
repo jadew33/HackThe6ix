@@ -4,9 +4,9 @@ $finance-image: "https://www.clipartkey.com/mpngs/m/46-465927_money-clipart-tran
 $food-image: "https://static.vecteezy.com/system/resources/previews/002/411/397/original/kitchen-and-restaurant-utensils-spatula-whisk-strainer-spoon-cartoon-set-kitchen-cutlery-hanging-vector.jpg";
 $pets-image: "https://freesvg.org/img/Paw_Print.png";
 $technology-image: "https://static.turbosquid.com/Preview/001276/701/FV/_D.jpg";
-$travel-image: "https://i.pinimg.com/736x/77/46/99/77469931a2c21816906c5058c5dbce49.jpg";
+$travel-image: "https://static.vecteezy.com/system/resources/thumbnails/002/143/971/small/airplane-commercial-airliner-jumbo-aircraft-jet-cartoon-illustration-vector.jpg";
 $music-image: "https://media.istockphoto.com/vectors/cartoon-headhpones-playing-music-vector-id905214218?k=6&m=905214218&s=170667a&w=0&h=7ZsLRzWvhsBvWuySYD0xCTvKRAn0lHQchm5UMCeITpY=";
-$entertainment-image: "https://image.shutterstock.com/image-vector/retro-tv-icon-260nw-776977309.jpg";
+$gardening-image: "https://previews.123rf.com/images/khabarushka/khabarushka1802/khabarushka180200117/96317863-succulent-potted-plant-flat-in-cartoon-illustration-on-white-background-.jpg";
 
 .interest {
   display: flex;
@@ -68,8 +68,8 @@ $entertainment-image: "https://image.shutterstock.com/image-vector/retro-tv-icon
   background-image: url($music-image);
 }
 
-.entertainment {
-  background-image: url($entertainment-image);
+.gardening {
+  background-image: url($gardening-image);
 }
 
 %interest-check {
@@ -102,7 +102,7 @@ $entertainment-image: "https://image.shutterstock.com/image-vector/retro-tv-icon
   &__music {
     @extend %interest-check;
   }
-  &__entertainment {
+  &__gardening {
     @extend %interest-check;
   }
 }

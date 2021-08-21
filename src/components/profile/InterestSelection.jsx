@@ -10,7 +10,7 @@ const InterestSelection = () => {
   const [checkedFinance, setCheckedFinance] = useState(false);
   const [checkedTravel, setCheckedTravel] = useState(false);
   const [checkedMusic, setCheckedMusic] = useState(false);
-  const [checkedEntertainment, setCheckedEntertainment] = useState(false);
+  const [checkedGardening, setCheckedGardening] = useState(false);
 
   function toggleChecked(state, fxn) {
     fxn(!state);
@@ -57,7 +57,7 @@ const InterestSelection = () => {
                 onClick={() => toggleChecked(checkedFood, setCheckedFood)}
               />
               {checkedFood && <i class="fas fa-check-circle icon__food"></i>}
-              <p>Food</p>
+              <p>Cooking</p>
             </>
           </div>
           <div className="interest__image-container-row">
@@ -109,15 +109,13 @@ const InterestSelection = () => {
             </>
             <>
               <div
-                className="interest__image entertainment"
+                className="interest__image gardening"
                 onClick={() =>
-                  toggleChecked(checkedEntertainment, setCheckedEntertainment)
+                  toggleChecked(checkedGardening, setCheckedGardening)
                 }
               />
-              {checkedEntertainment && (
-                <i class="fas fa-check-circle icon__entertainment"></i>
-              )}
-              <p>Movies/TV</p>
+              {checkedGardening && <i class="fas fa-check-circle "></i>}
+              <p>Gardening</p>
             </>
           </div>
         </div>
