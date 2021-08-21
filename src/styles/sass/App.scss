@@ -1,5 +1,18 @@
+@import "./variables";
+@import "./Age.scss";
+@import "./Profile.scss";
+@import "./Onboarding.scss";
+@import "./Budget.scss";
+@import "./Dashboard.scss";
+@import "./Image.scss";
+@import "./Interest.scss";
+@import "./Profile.scss";
+@import "./GetStarted.scss";
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-color: $background;
 }

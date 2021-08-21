@@ -1,13 +1,33 @@
+@import "./variables";
+
 .profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
+  margin-top: 2em;
+  width: 85vw;
+
+  h1 {
+    font-family: $poppins;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 28px;
+  }
+  h3 {
+    margin-top: 0.3em;
+    font-family: $poppins;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  &__description {
+    margin-top: 0;
+    font-family: $work-sans;
+    font-size: 12;
+  }
   &__navigation {
     transform: scale(0.4);
     display: flex;
     justify-content: center;
+    color: $light-gray;
     &-icon {
       padding-inline: 1em;
       padding-block: 0.5em;
@@ -17,18 +37,50 @@
     margin-top: 3em;
   }
   &__body {
-    height: 70vh;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   &__button {
     border-radius: 10%;
     padding-block: 0.5em;
     padding-inline: 1em;
+    width: 80vw;
+    background-color: $dark-purple;
+    color: white;
+    margin-left: 0.75em;
+    font-family: $poppins;
+    padding-block: 0.75em;
+    border-radius: 10px;
+    margin-block: 0.5em;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
   }
 }
 
 .current {
-  color: grey;
+  color: black;
+  transform: scale(1.1);
+}
+
+.chevron {
+  margin-top: 3em;
+}
+
+.age {
+  &__container {
+    height: 40vh;
+  }
+  display: flex;
+  justify-content: center;
+  margin-left: 0.6em;
+  input {
+    border: none;
+    border-bottom: 1px solid $skip-blue;
+    font-family: $work-sans;
+    align-self: center;
+    outline: none;
+    background-color: $background;
+  }
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../../styles/sass/Image.scss";
 import nonejpg from "./none.jpg";
 import profilepng from "./profile.png";
 
