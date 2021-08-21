@@ -21,9 +21,11 @@ firebase.initializeApp(firebaseConfig);
 
 const authRoute = require("./routes/auth");
 const usersRoute = require("./routes/users");
+const partnersRoute = require("./routes/partners");
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
+app.use("/api/partners", partnersRoute);
 
 app.listen(5001, () =>{
     console.log("Listening on port 5001");
