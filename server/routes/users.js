@@ -63,25 +63,18 @@ router.get("/", (req, res) => {
 
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
 
     let id = req.params.id;
-    usersRef
-    .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            let user = doc.data();
-            if (user.userId === id || user.user-id === id) {
-                return res.status(200).send(user);
-            }
-        });
-        return res.status(400).send("User not found");
+    usersRef.doc(id).get()
+    .then(function(snapshot) {
+        const user = snapshot.data();
+        res.status(200).send(user);
     })
     .catch(function(error) {
-        console.log("Error getting documents: ", error);
-        res.status(400).send("User not found");
+        console.log(error);
+        res.send(400);
     });
-
 });
 
 
