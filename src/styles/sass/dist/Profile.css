@@ -7,18 +7,17 @@
 }
 .profile h1 {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 0.3em;
   margin-left: 10px;
   font-size: 28px;
 }
 .profile h3 {
-  margin-top: 0.3em;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0;
+  margin-block: 0;
   font-size: 16px;
 }
 .profile__description {
-  margin-top: 0;
+  margin-top: 0.3em;
   font-family: "Work Sans", sans-serif;
   font-size: 12;
 }
