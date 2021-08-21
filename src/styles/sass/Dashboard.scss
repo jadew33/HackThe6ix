@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  &__body {
+    height: 100vh;
+  }
+  &__content {
+    height: 90vh;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  align-content: space-between;
+  &__icon {
+    margin: 0.5em;
+  }
+}
