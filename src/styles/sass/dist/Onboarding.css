@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap");
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.onboarding__skip {
+  font-family: "Work Sans", sans-serif;
+  position: absolute;
+  font-size: 13px;
+  color: #4d9ce4;
+  right: 1.5em;
+  top: 1em;
+  text-decoration: none;
+}
+.onboarding__image {
+  width: 250px;
+  height: 250px;
+  margin-top: 3em;
+}
+.onboarding h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28;
+  font-weight: bold;
+  line-height: 12px;
+}
+.onboarding span {
+  color: #a5a6f6;
+}
+.onboarding p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+.onboarding__text {
+  text-align: center;
+}
+.onboarding__button {
+  width: 60vw;
+  background-color: #7879f1;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-block: 0.75em;
+  border-radius: 10px;
+  margin-top: 1em;
+  border: none;
+}
+.onboarding__page {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

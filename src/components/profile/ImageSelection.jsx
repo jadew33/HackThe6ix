@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import nonejpg from "./none.jpg";
-import profilepng from "./profile.png";
+import nonejpg from "../../assets/none.jpg";
+import profilepng from "../../assets/profile.png";
 
 const ImageSelection = () => {
   const [picture, setPicture] = useState(nonejpg);
@@ -9,7 +9,7 @@ const ImageSelection = () => {
   };
   return (
     <div className="image">
-      <p>Almost done, time to add a nice profile photo</p>
+      <p>Almost done, pick a profile photo</p>
       <div className="image__input-wrapper">
         <img src={picture} className="image__image" />
         <input

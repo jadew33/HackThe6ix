@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import eye from "./eye.svg";
-import google from "./google.svg";
+import eye from "../../assets/eye.svg";
+import google from "../../assets/google.svg";
 
 const GetStarted = () => {
   return (
