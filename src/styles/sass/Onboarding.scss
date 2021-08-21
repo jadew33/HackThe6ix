@@ -1,0 +1,56 @@
+@import "./variables";
+
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  &__skip {
+    font-family: $work-sans;
+    position: absolute;
+    font-size: 13px;
+    color: $skip-blue;
+    right: 1.5em;
+    top: 1em;
+    text-decoration: none;
+  }
+  &__image {
+    width: 250px;
+    height: 250px;
+    margin-top: 3em;
+  }
+  h2 {
+    font-family: $poppins;
+    font-size: 28;
+    font-weight: bold;
+    line-height: 12px;
+  }
+  span {
+    color: $purple;
+  }
+  p {
+    font-family: $work-sans;
+    font-size: 20px;
+  }
+  &__text {
+    text-align: center;
+  }
+  &__button {
+    width: 60vw;
+    background-color: $dark-purple;
+    color: white;
+    font-family: $poppins;
+    padding-block: 0.75em;
+    border-radius: 10px;
+    margin-top: 1em;
+    border: none;
+  }
+  &__page {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap");
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  width: 85vw;
+}
+.profile h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 28px;
+}
+.profile h3 {
+  margin-top: 0.3em;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.profile__description {
+  margin-top: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 12;
+}
+.profile__navigation {
+  transform: scale(0.4);
+  display: flex;
+  justify-content: center;
+  color: #d3d3d3;
+}
+.profile__navigation-icon {
+  padding-inline: 1em;
+  padding-block: 0.5em;
+}
+.profile__return-icon {
+  margin-top: 3em;
+}
+.profile__body {
+  display: flex;
+  align-items: center;
+}
+.profile__button {
+  border-radius: 10%;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  width: 80vw;
+  background-color: #7879f1;
+  color: white;
+  margin-left: 0.75em;
+  font-family: "Poppins", sans-serif;
+  padding-block: 0.75em;
+  border-radius: 10px;
+  margin-block: 0.5em;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+.current {
+  color: black;
+  transform: scale(1.1);
+}
+
+.chevron {
+  margin-top: 3em;
+}
+
+.age {
+  display: flex;
+  justify-content: center;
+  margin-left: 0.6em;
+}
+.age__container {
+  height: 40vh;
+}
+.age input {
+  border: none;
+  border-bottom: 1px solid #4d9ce4;
+  font-family: "Work Sans", sans-serif;
+  align-self: center;
+  outline: none;
+  background-color: #f6f6fe;
+}

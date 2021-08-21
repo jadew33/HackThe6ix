@@ -3,7 +3,6 @@ import AgeSelection from "./AgeSelection";
 import InterestSelection from "./InterestSelection";
 import ImageSelection from "./ImageSelection";
 import { Link } from "react-router-dom";
-import "../../styles/sass/Profile.scss";
 
 class Profile extends Component {
   constructor(props) {
@@ -22,12 +21,10 @@ class Profile extends Component {
     const { tab } = this.state;
     return (
       <div className="profile">
-        <h1>
-          <Link to="/">
-            <i class="fas fa-chevron-left"></i>
-          </Link>{" "}
-          Profile Setup
-        </h1>
+        <Link to="/">
+          <i class="fas fa-chevron-left chevron"></i>
+        </Link>
+        <h1>Profile Setup</h1>
         <div className="profile__body">
           {tab === 1 && <AgeSelection />}
           {tab === 2 && <InterestSelection />}
@@ -51,7 +48,11 @@ class Profile extends Component {
           ></i>
         </div>
         {(tab === 1 || tab === 2) && (
-          <button onClick={this.progress} className="profile__button">
+          <button
+            onClick={this.progress}
+            className="profile__button"
+            id="continue-button"
+          >
             Continue
           </button>
         )}
