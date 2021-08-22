@@ -67,7 +67,7 @@ const InterestSelection = () => {
                 onClick={() => toggleChecked(checkedPets, setCheckedPets)}
               />
               {checkedPets && <i class="fas fa-check-circle icon__pets"></i>}
-              <p>Pets</p>
+              <p>Sports</p>
             </>
             <>
               <div
@@ -75,7 +75,7 @@ const InterestSelection = () => {
                 onClick={() => toggleChecked(checkedTech, setCheckedTech)}
               />
               {checkedTech && <i class="fas fa-check-circle icon__tech"></i>}
-              <p>Tech</p>
+              <p>Hair</p>
             </>
             <>
               <div
@@ -114,7 +114,9 @@ const InterestSelection = () => {
                   toggleChecked(checkedGardening, setCheckedGardening)
                 }
               />
-              {checkedGardening && <i class="fas fa-check-circle "></i>}
+              {checkedGardening && (
+                <i class="fas fa-check-circle icon__gardening "></i>
+              )}
               <p>Gardening</p>
             </>
           </div>

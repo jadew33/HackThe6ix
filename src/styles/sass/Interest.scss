@@ -1,12 +1,12 @@
-$makeup-image: "https://lh3.googleusercontent.com/proxy/Ohm4LNPXvzsRNMIycDfUdMBz8HC8aIV5Srr_hstoMqvcG8VNBCSjXsvZuumPt7zZ6-8g9RSBRAvX6ipxeBkLqBoo7QLepOyXoucFk9XW8P0Mz224AsV9gCJlN6IOVibYzqT1z-0Tn8zM4IoriQ8Rh7UQfSr1szo7ueoNkPQ";
-$clothing-image: "https://banner2.cleanpng.com/20180306/rxe/kisspng-fashion-model-clothing-royalty-free-trend-men-and-women-clothing-5a9e3e60dcddb3.2349612315203200969047.jpg";
-$finance-image: "https://www.clipartkey.com/mpngs/m/46-465927_money-clipart-transparent-images-png-transparent-animated-picture.png";
-$food-image: "https://static.vecteezy.com/system/resources/previews/002/411/397/original/kitchen-and-restaurant-utensils-spatula-whisk-strainer-spoon-cartoon-set-kitchen-cutlery-hanging-vector.jpg";
-$pets-image: "https://freesvg.org/img/Paw_Print.png";
-$technology-image: "https://static.turbosquid.com/Preview/001276/701/FV/_D.jpg";
-$travel-image: "https://static.vecteezy.com/system/resources/thumbnails/002/143/971/small/airplane-commercial-airliner-jumbo-aircraft-jet-cartoon-illustration-vector.jpg";
-$music-image: "https://media.istockphoto.com/vectors/cartoon-headhpones-playing-music-vector-id905214218?k=6&m=905214218&s=170667a&w=0&h=7ZsLRzWvhsBvWuySYD0xCTvKRAn0lHQchm5UMCeITpY=";
-$gardening-image: "https://previews.123rf.com/images/khabarushka/khabarushka1802/khabarushka180200117/96317863-succulent-potted-plant-flat-in-cartoon-illustration-on-white-background-.jpg";
+$makeup-image: "../../assets/makeup.png";
+$clothing-image: "../../assets/shopping.png";
+$finance-image: "../../assets/coin.png";
+$food-image: "../../assets/cookbook.png";
+$pets-image: "../../assets/hockey.png";
+$technology-image: "../../assets/hair.png";
+$travel-image: "../../assets/umbrella.png";
+$music-image: "../../assets/music.png";
+$gardening-image: "../../assets/gardening.png";
 
 .interest {
   display: flex;
@@ -73,36 +73,55 @@ $gardening-image: "https://previews.123rf.com/images/khabarushka/khabarushka1802
 }
 
 %interest-check {
-  color: green;
+  color: #4bd37b;
   position: absolute;
+  transform: scale(1.5);
 }
 
 .icon {
   &__fashion {
     @extend %interest-check;
+    right: 1em;
+    top: 15em;
   }
   &__makeup {
     @extend %interest-check;
+    right: 1em;
+    top: 5.5em;
   }
   &__food {
     @extend %interest-check;
+    right: 1em;
+    top: 24.5em;
   }
   &__pets {
     @extend %interest-check;
+    right: 1em;
+    top: 5.5em;
   }
   &__tech {
     @extend %interest-check;
+    right: 1em;
+    top: 15em;
   }
   &__finance {
     @extend %interest-check;
+    right: 1em;
+    top: 24.5em;
   }
   &__travel {
     @extend %interest-check;
+    right: 1em;
+    top: 5.5em;
   }
   &__music {
     @extend %interest-check;
+    right: 1em;
+    top: 15em;
   }
   &__gardening {
     @extend %interest-check;
+    right: 1em;
+    top: 24.5em;
   }
 }
