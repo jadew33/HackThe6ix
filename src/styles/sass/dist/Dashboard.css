@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans&display=swap");
+.dashboard {
+  display: flex;
+}
+.dashboard__body {
+  height: 100vh;
+  width: 100vw;
+}
+.dashboard__content {
+  height: 90vh;
+}
+
+.footer {
+  padding: 0.5em;
+  margin-top: auto;
+  position: sticky;
+  padding-inline: 1em;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.footer__icon {
+  margin: 0.5em;
+}
+.footer__icon:hover {
+  fill: green;
+  transform: scale(1.5);
+}
+.footer__home {
+  position: absolute;
+  top: 10px;
+}
+.footer__budget {
+  position: absolute;
+  bottom: 12px;
+}
+.footer__goals {
+  position: absolute;
+  bottom: 11px;
+}
