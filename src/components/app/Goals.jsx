@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "./Footer";
-import dashboard from "../../assets/dashboard.png";
-const Dashboard = () => {
+import goals from "../../assets/goals.png";
+const Goals = () => {
   return (
     <div className="dashboard__body">
       <div className="dashboard__content">
-        <img src={dashboard} style={{ height: "520px", width: "320px" }} />
+        <img src={goals} style={{ height: "520px", width: "320px" }} />
       </div>
       <Footer />
     </div>
   );
 };
-export default Dashboard;
+export default Goals;
