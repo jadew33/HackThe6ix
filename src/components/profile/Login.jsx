@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import eye from "../../assets/eye.svg";
 import google from "../../assets/google.svg";
 
-const GetStarted = () => {
+const Login = () => {
 
   const [data, setData] = useState({
     name: "",
@@ -27,21 +27,16 @@ const GetStarted = () => {
       <Link to="/">
         <i class="fas fa-chevron-left chevron-icon"></i>
       </Link>
-      <h1>Get Started</h1>
+      <h1>Login</h1>
       <p className="account-details">Account Details</p>
-      <input name = "name" type="text" placeholder="Full name" onChange = {handleChange}/>
       <input name = "email" type="email" placeholder="Email Address" onChange = {handleChange}/>
       <input name = "password" type="password" placeholder="Password" onChange = {handleChange}/>
       <img src={eye} className="eye" />
-      <p className="fine-text">
-        By continuing, you agree to our{" "}
-        <span>Terms and Conditions and Privacy Policy</span>
-      </p>
-      <Link to="/register">
+      <Link to="/budget">
         <button onClick = {handleSubmit} className="continue">Continue</button>
       </Link>
       <p className="fine-text">
-        Don't have an account? <span>Log in</span>
+        Don't have an account? <span>Sign-Up</span>
       </p>
       <p className="or fine-text"> or </p>
       <button className="google">
@@ -51,4 +46,4 @@ const GetStarted = () => {
     </div>
   );
 };
-export default GetStarted;
+export default Login;
