@@ -14,13 +14,14 @@ const Dashboard = ({match}) => {
 
   const {params: {id}} = match;
 
-  const [financialData, setFinancialData] = useState({savings: 0, income: 0, expenses: 0});
+  const [financialData, setFinancialData] = useState({name: "Futaro Uesugi", savings: 0, income: 0, expenses: 0});
 
   useEffect(() => {
     axios.get(`/localhost:5001/api/users/${id}`)
     .then(response => {
       const data = response.data; 
       setFinancialData({
+        name: data.name,
         savings: data.savings,
         income: data.income,
         expenses: data.expenditure, 
@@ -34,6 +35,13 @@ const Dashboard = ({match}) => {
   return (
     <div className="dashboard__body">
       <div className="dashboard__content">
+        <Card>
+        <CardContent>
+          <Typography variant="h5" component="h2" gutterBottom>
+            Hello {financialData.name}
+          </Typography>
+        </CardContent>
+      </Card>
         <img src={dashboard} style={{ height: "520px", width: "320px" }} />
         <Card>
         <CardContent>
