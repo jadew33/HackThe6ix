@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/register" render={() => <Profile />} />
-        <Route exact path="/dashboard" render={() => <Dashboard />} />
+        <Route path="/dashboard/:id" render={(params) => <Dashboard {...params}/>} />
         <Route exact path="/budget" render={() => <Budget />} />
         <Route exact path = "/budgetform" render ={() => <BudgetForm />} />
         <Route exact path = "/expenseform" render ={() => <ExpenseForm />} />

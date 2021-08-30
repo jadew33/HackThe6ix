@@ -139,6 +139,36 @@ router.put("/:id", (req, res) => {
 
     }
 
+    //Update Monthly Income
+    if (updateBody.income) {
+
+        usersRef.doc(id).update({
+            income: updateBody.income
+        })
+        .then(function(user) {
+            res.status(200).send(user);
+        })
+        .catch(function(error) {
+            console.log(error);
+            res.send(400);
+        });
+    }
+
+    //Update Monthly Savings
+    if (updateBody.savings) {
+
+        usersRef.doc(id).update({
+            savings: updateBody.savings
+        })
+        .then(function(user) {
+            res.status(200).send(user);
+        })
+        .catch(function(error) {
+            console.log(error);
+            res.send(400);
+        });
+    }
+
     //Update status of user's goal
     if (updateBody.meetingBudgetGoal) {
 
